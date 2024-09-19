@@ -7,8 +7,8 @@ services:
     container_name: x-ui
     hostname: yourhostname
     volumes:
-      - ../db/:/etc/x-ui/
-      - ../cert/:/root/cert/
+      - /mnt/usb-d8aee58a/storage/db/:/etc/x-ui/
+      - /mnt/usb-d8aee58a/storage/cert/:/root/cert/
     environment:
       XRAY_VMESS_AEAD_FORCED: "false"
     tty: true
